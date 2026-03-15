@@ -1,0 +1,213 @@
+Aim for a first public collection of about 40 curated skills, then grow toward 80–120.
+Below is a list of 75 skill ideas that would make your repo feel substantial and your website feel rich.
+
+75 strong skill ideas
+Developer workflow
+
+Code review assistant
+
+Bug triage workflow
+
+PR description writer
+
+Commit message generator
+
+Refactor planner
+
+Tech debt auditor
+
+Repo onboarding guide
+
+Architecture explainer
+
+Breaking change detector
+
+Release notes generator
+
+Debugging and testing
+
+Stack trace analyzer
+
+Frontend bug reproducer
+
+API bug investigator
+
+Test case generator
+
+Regression finder
+
+Flaky test analyzer
+
+Edge-case discovery
+
+Playwright test builder
+
+Unit test improver
+
+Error log summarizer
+
+GitHub and collaboration
+
+Issue-to-PR planner
+
+PR review responder
+
+Contributor onboarding helper
+
+OSS maintainer assistant
+
+Changelog curator
+
+Roadmap synthesizer
+
+Documentation gap finder
+
+Code ownership mapper
+
+Sprint summary generator
+
+Meeting-to-tasks converter
+
+Documentation
+
+README writer
+
+API docs generator
+
+SDK quickstart writer
+
+Migration guide writer
+
+Release documentation assistant
+
+Internal docs summarizer
+
+FAQ generator
+
+Troubleshooting guide builder
+
+Docs style normalizer
+
+Example snippets generator
+
+Web and frontend
+
+Landing page copy improver
+
+UI component spec writer
+
+Design-to-code translator
+
+Accessibility audit helper
+
+SEO metadata generator
+
+Structured data schema helper
+
+Responsive layout reviewer
+
+Empty state / UX copy writer
+
+Form UX optimizer
+
+Performance audit explainer
+
+Backend and API
+
+API contract reviewer
+
+Endpoint design assistant
+
+Auth flow planner
+
+Database schema reviewer
+
+SQL query optimizer helper
+
+Caching strategy advisor
+
+Webhook integration planner
+
+Background jobs planner
+
+Observability checklist assistant
+
+Incident postmortem writer
+
+AI and agent building
+
+Prompt evaluator
+
+Prompt refiner
+
+RAG workflow planner
+
+MCP server idea generator
+
+MCP integration assistant
+
+Agent tool-selection helper
+
+LLM app architecture helper
+
+Hallucination risk reviewer
+
+Guardrails checklist assistant
+
+AI feature spec writer
+
+Content, marketing, and creators
+
+Blog outline generator
+
+Article repurposer
+
+YouTube-to-blog converter
+
+Social post thread writer
+
+Newsletter summary writer
+
+Best 20 to launch first
+
+If you want the collection to look instantly credible, I’d start with these first:
+
+Code review assistant
+
+Bug triage workflow
+
+PR description writer
+
+Refactor planner
+
+Release notes generator
+
+Stack trace analyzer
+
+Test case generator
+
+Playwright test builder
+
+README writer
+
+API docs generator
+
+Migration guide writer
+
+SEO metadata generator
+
+Accessibility audit helper
+
+API contract reviewer
+
+Database schema reviewer
+
+Prompt refiner
+
+RAG workflow planner
+
+MCP integration assistant
+
+Blog outline generator
+
+Newsletter summary writer
