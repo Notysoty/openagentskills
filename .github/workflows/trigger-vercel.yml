@@ -1,0 +1,16 @@
+name: Trigger Vercel Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'skills/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger simplyutils Vercel redeploy
+        run: |
+          curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_6jDWVnSsT2REZ3dgbr0rUm4SbTcc/fjmILyMfpz"
