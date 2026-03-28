@@ -1,4 +1,4 @@
-![Skills](https://img.shields.io/badge/skills-50-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen) ![License](https://img.shields.io/badge/license-MIT-green)
+![Skills](https://img.shields.io/badge/skills-62-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen) ![License](https://img.shields.io/badge/license-MIT-green) ![npm](https://img.shields.io/badge/npm-openagentskills-red) ![Version](https://img.shields.io/badge/version-1.1.0-orange)
 
 # OpenAgentSkills
 
@@ -86,6 +86,20 @@ Skills work across multiple agent environments: **Claude Code**, **Cursor**, **C
 | `devops` | CI/CD, deployment, infrastructure |
 | `research` | Literature review, fact-checking, synthesis |
 | `productivity` | Task management, planning, documentation |
+
+---
+
+## Installation
+
+```bash
+# Use without installing (recommended for one-off use)
+npx openagentskills list
+
+# Install globally for repeated use
+npm install -g openagentskills
+```
+
+**Requirements:** Node.js 16 or higher.
 
 ---
 

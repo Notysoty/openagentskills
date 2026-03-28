@@ -7,3 +7,8 @@ node_modules/
 # OS
 .DS_Store
 Thumbs.db
+
+# Planning files (local session only)
+task_plan.md
+findings.md
+progress.md

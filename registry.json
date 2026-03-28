@@ -1,0 +1,810 @@
+[
+  {
+    "slug": "accessibility-audit-helper",
+    "name": "Accessibility Audit Helper",
+    "description": "Reviews UI code and components for WCAG 2.1 accessibility violations and provides specific fixes.",
+    "category": "coding",
+    "tags": [
+      "accessibility",
+      "wcag",
+      "a11y",
+      "html",
+      "react"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "agent-context-file-writer",
+    "name": "Agent Context File Writer",
+    "description": "Writes a high-quality CLAUDE.md, .cursorrules, or .windsurfrules file that gives a coding agent the right project context, conventions, and constraints to work effectively.",
+    "category": "productivity",
+    "tags": [
+      "claude-code",
+      "cursor",
+      "cursorrules",
+      "coding-agent",
+      "context"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "agent-eval-framework-builder",
+    "name": "Agent Evaluation Framework Builder",
+    "description": "Designs an eval suite for an LLM agent or pipeline including success metrics, trajectory scoring, LLM-as-judge setup, and regression test cases.",
+    "category": "coding",
+    "tags": [
+      "llm-eval",
+      "testing",
+      "llm-as-judge",
+      "agent-testing",
+      "quality"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "ai-feature-spec-writer",
+    "name": "AI Feature Spec Writer",
+    "description": "Writes a complete product spec for an AI-powered feature including user stories, model requirements, fallback behavior, and evaluation criteria.",
+    "category": "research",
+    "tags": [
+      "ai",
+      "product-spec",
+      "llm",
+      "feature-planning"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "api-docs-generator",
+    "name": "API Documentation Generator",
+    "description": "Generates OpenAPI-compatible documentation for REST API endpoints from code or route definitions.",
+    "category": "coding",
+    "tags": [
+      "api",
+      "documentation",
+      "openapi",
+      "swagger"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "api-endpoint-designer",
+    "name": "REST API Endpoint Designer",
+    "description": "Designs RESTful API endpoints following OpenAPI spec and industry best practices.",
+    "category": "coding",
+    "tags": [
+      "api",
+      "rest",
+      "openapi",
+      "backend"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "architecture-explainer",
+    "name": "Architecture Explainer",
+    "description": "Reads a codebase or system description and produces a clear, structured architecture overview with diagrams.",
+    "category": "coding",
+    "tags": [
+      "architecture",
+      "documentation",
+      "system-design"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "article-repurposer",
+    "name": "Article Repurposer",
+    "description": "\"Takes a long-form article and repurposes it into multiple formats: tweet thread, LinkedIn post, TL;DR, and key quotes.\"",
+    "category": "writing",
+    "tags": [
+      "content",
+      "repurposing",
+      "social-media",
+      "writing"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "auth-flow-planner",
+    "name": "Auth Flow Planner",
+    "description": "Designs a secure authentication and authorization flow for any application, covering login, sessions, roles, and edge cases.",
+    "category": "coding",
+    "tags": [
+      "auth",
+      "security",
+      "backend",
+      "jwt",
+      "oauth"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "blog-outline-generator",
+    "name": "Blog Outline Generator",
+    "description": "Generates a detailed, SEO-optimized blog post outline with H2/H3 structure, key points per section, and a hook.",
+    "category": "writing",
+    "tags": [
+      "blog",
+      "writing",
+      "content",
+      "seo",
+      "outline"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "breaking-change-detector",
+    "name": "Breaking Change Detector",
+    "description": "Compares two versions of a codebase or API and flags all breaking changes with migration hints.",
+    "category": "coding",
+    "tags": [
+      "breaking-changes",
+      "versioning",
+      "api",
+      "migration"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "bug-root-cause-analyzer",
+    "name": "Bug Root Cause Analyzer",
+    "description": "Systematically diagnoses bugs by tracing execution flow and identifying root causes vs symptoms.",
+    "category": "coding",
+    "tags": [
+      "debugging",
+      "root-cause",
+      "analysis"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "caching-strategy-advisor",
+    "name": "Caching Strategy Advisor",
+    "description": "Recommends the right caching layer, TTL strategy, and invalidation approach for any application bottleneck.",
+    "category": "devops",
+    "tags": [
+      "caching",
+      "performance",
+      "redis",
+      "cdn",
+      "backend"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "changelog-curator",
+    "name": "Changelog Curator",
+    "description": "Maintains and formats a CHANGELOG.md following Keep a Changelog conventions from git history or PR list.",
+    "category": "productivity",
+    "tags": [
+      "changelog",
+      "documentation",
+      "git",
+      "releases"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "code-review-checklist",
+    "name": "Code Review Checklist",
+    "description": "Runs a systematic checklist review on any code diff or file, covering correctness, security, performance, and readability.",
+    "category": "coding",
+    "tags": [
+      "code-review",
+      "quality",
+      "security",
+      "best-practices"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "database-schema-reviewer",
+    "name": "Database Schema Reviewer",
+    "description": "Reviews database schemas for normalization issues, missing indexes, naming inconsistencies, and scalability risks.",
+    "category": "data",
+    "tags": [
+      "database",
+      "sql",
+      "schema",
+      "postgresql",
+      "mysql"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "docker-compose-generator",
+    "name": "Docker Compose Generator",
+    "description": "Generates production-ready docker-compose.yml files for any application stack.",
+    "category": "devops",
+    "tags": [
+      "docker",
+      "containers",
+      "devops",
+      "infrastructure"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "documentation-gap-finder",
+    "name": "Documentation Gap Finder",
+    "description": "Audits a codebase or docs folder and lists everything that is undocumented, outdated, or unclear.",
+    "category": "productivity",
+    "tags": [
+      "documentation",
+      "audit",
+      "dx",
+      "technical-writing"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "edge-case-discovery",
+    "name": "Edge Case Discovery",
+    "description": "Systematically identifies edge cases and boundary conditions for any function, API, or user flow.",
+    "category": "coding",
+    "tags": [
+      "testing",
+      "edge-cases",
+      "qa",
+      "boundary-testing"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "error-log-summarizer",
+    "name": "Error Log Summarizer",
+    "description": "Parses raw error logs and produces a concise, prioritized summary of unique issues with root cause hints.",
+    "category": "coding",
+    "tags": [
+      "logs",
+      "debugging",
+      "monitoring",
+      "errors"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "faq-generator",
+    "name": "FAQ Generator",
+    "description": "Generates a comprehensive FAQ section for any product, API, or documentation page.",
+    "category": "writing",
+    "tags": [
+      "faq",
+      "documentation",
+      "content",
+      "ux"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "flaky-test-analyzer",
+    "name": "Flaky Test Analyzer",
+    "description": "Diagnoses why tests pass inconsistently and suggests fixes for timing, ordering, and state isolation issues.",
+    "category": "coding",
+    "tags": [
+      "testing",
+      "flaky-tests",
+      "ci",
+      "reliability"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "form-ux-optimizer",
+    "name": "Form UX Optimizer",
+    "description": "Reviews web forms for usability issues — field ordering, validation messages, error states, and accessibility.",
+    "category": "coding",
+    "tags": [
+      "forms",
+      "ux",
+      "accessibility",
+      "frontend"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "git-commit-writer",
+    "name": "Git Commit Writer",
+    "description": "Generates conventional commit messages from staged changes or a diff.",
+    "category": "coding",
+    "tags": [
+      "git",
+      "commits",
+      "conventional-commits"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "hallucination-risk-reviewer",
+    "name": "Hallucination Risk Reviewer",
+    "description": "Reviews an AI-generated response or LLM application output for factual risks, hallucination patterns, and confidence calibration issues.",
+    "category": "research",
+    "tags": [
+      "llm",
+      "ai",
+      "hallucination",
+      "evaluation",
+      "reliability"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "hybrid-search-architect",
+    "name": "Hybrid Search Architect",
+    "description": "Designs a hybrid retrieval pipeline combining dense vector search and BM25 sparse search with reciprocal rank fusion, and explains when to use each configuration.",
+    "category": "coding",
+    "tags": [
+      "rag",
+      "hybrid-search",
+      "bm25",
+      "vector-search",
+      "retrieval"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "incident-postmortem-writer",
+    "name": "Incident Postmortem Writer",
+    "description": "Writes a blameless incident postmortem document from an incident timeline or Slack thread.",
+    "category": "productivity",
+    "tags": [
+      "incidents",
+      "postmortem",
+      "reliability",
+      "sre",
+      "documentation"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "issue-to-pr-planner",
+    "name": "Issue to PR Planner",
+    "description": "Takes a GitHub issue and produces a step-by-step implementation plan with file locations and code changes needed.",
+    "category": "productivity",
+    "tags": [
+      "github",
+      "planning",
+      "issues",
+      "pull-request"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "landing-page-copy-improver",
+    "name": "Landing Page Copy Improver",
+    "description": "Rewrites landing page copy to be more compelling, benefit-focused, and conversion-optimized.",
+    "category": "writing",
+    "tags": [
+      "copywriting",
+      "marketing",
+      "landing-page",
+      "conversion"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "langgraph-state-machine-designer",
+    "name": "LangGraph State Machine Designer",
+    "description": "Converts a workflow description into a LangGraph node/edge graph with typed state, conditional routing, and human-in-the-loop checkpoints.",
+    "category": "coding",
+    "tags": [
+      "langgraph",
+      "agents",
+      "state-machine",
+      "langchain",
+      "orchestration"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "llm-cost-optimizer",
+    "name": "LLM Cost Optimizer",
+    "description": "Audits an AI application for unnecessary token spend and recommends prompt caching, model routing, and token reduction techniques to cut costs.",
+    "category": "devops",
+    "tags": [
+      "llm-ops",
+      "cost-optimization",
+      "prompt-caching",
+      "model-routing",
+      "tokens"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "llm-tracing-setup",
+    "name": "LLM Tracing and Observability Setup",
+    "description": "Configures end-to-end tracing for an LLM application using OpenTelemetry with LangSmith, Langfuse, or Helicone — span naming, metadata tagging, latency thresholds, and cost tracking.",
+    "category": "devops",
+    "tags": [
+      "llm-ops",
+      "observability",
+      "tracing",
+      "langsmith",
+      "langfuse"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "mcp-integration-assistant",
+    "name": "MCP Integration Assistant",
+    "description": "Helps design and implement Model Context Protocol (MCP) server integrations for AI agents.",
+    "category": "coding",
+    "tags": [
+      "mcp",
+      "model-context-protocol",
+      "ai",
+      "agents",
+      "tools"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "mcp-server-builder",
+    "name": "MCP Server Builder",
+    "description": "Step-by-step guidance for creating a new MCP server with FastMCP or the TypeScript SDK — tool definitions, resource handlers, error responses, and usage examples.",
+    "category": "coding",
+    "tags": [
+      "mcp",
+      "model-context-protocol",
+      "tools",
+      "fastmcp",
+      "claude"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "migration-guide-writer",
+    "name": "Migration Guide Writer",
+    "description": "Writes clear migration guides for library upgrades, breaking API changes, or framework version bumps.",
+    "category": "writing",
+    "tags": [
+      "migration",
+      "documentation",
+      "breaking-changes",
+      "upgrades"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "newsletter-summary-writer",
+    "name": "Newsletter Summary Writer",
+    "description": "Condenses long articles, threads, or documents into concise, engaging newsletter-ready summaries.",
+    "category": "writing",
+    "tags": [
+      "newsletter",
+      "writing",
+      "summarization",
+      "content"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "observability-checklist",
+    "name": "Observability Checklist",
+    "description": "Reviews a service or codebase against a full observability checklist — logs, metrics, traces, and alerting gaps.",
+    "category": "devops",
+    "tags": [
+      "observability",
+      "monitoring",
+      "logging",
+      "tracing",
+      "sre"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "playwright-test-builder",
+    "name": "Playwright Test Builder",
+    "description": "Generates robust Playwright end-to-end tests for web pages and user flows.",
+    "category": "coding",
+    "tags": [
+      "testing",
+      "playwright",
+      "e2e",
+      "automation"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "pr-description-writer",
+    "name": "PR Description Writer",
+    "description": "Writes clear, thorough pull request descriptions from a diff or list of changes.",
+    "category": "productivity",
+    "tags": [
+      "git",
+      "pull-request",
+      "documentation",
+      "productivity"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "prompt-injection-auditor",
+    "name": "Prompt Injection Defense Auditor",
+    "description": "Reviews LLM application prompts and input handling for direct and indirect prompt injection vulnerabilities, then writes defensive scaffolding.",
+    "category": "coding",
+    "tags": [
+      "security",
+      "prompt-injection",
+      "llm-security",
+      "owasp",
+      "guardrails"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "prompt-refiner",
+    "name": "Prompt Refiner",
+    "description": "Improves AI prompts to be clearer, more specific, and produce more consistent outputs.",
+    "category": "research",
+    "tags": [
+      "prompting",
+      "llm",
+      "ai",
+      "prompt-engineering"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "prompt-version-control",
+    "name": "Prompt Version Control Workflow",
+    "description": "Sets up a prompt versioning system with naming conventions, diff tracking, A/B evaluation gates before promotion, and rollback triggers.",
+    "category": "devops",
+    "tags": [
+      "llm-ops",
+      "prompt-engineering",
+      "versioning",
+      "ci-cd",
+      "evaluation"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "rag-chunking-advisor",
+    "name": "RAG Chunking Strategy Advisor",
+    "description": "Given a document type and retrieval goal, recommends the optimal chunking strategy for a RAG pipeline to minimize retrieval failures.",
+    "category": "coding",
+    "tags": [
+      "rag",
+      "chunking",
+      "retrieval",
+      "embeddings",
+      "vector-search"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "rag-workflow-planner",
+    "name": "RAG Workflow Planner",
+    "description": "Designs a complete Retrieval-Augmented Generation (RAG) pipeline for a given use case, including chunking strategy, embedding model selection, and retrieval approach.",
+    "category": "research",
+    "tags": [
+      "rag",
+      "llm",
+      "ai",
+      "embeddings",
+      "vector-database"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "react-code-reviewer",
+    "name": "React Component Reviewer",
+    "description": "Analyzes React components for performance, accessibility, and modern hook usage.",
+    "category": "coding",
+    "tags": [
+      "react",
+      "code-review",
+      "performance"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "readme-writer",
+    "name": "README Writer",
+    "description": "Generates a professional, comprehensive README.md for any project from its codebase or description.",
+    "category": "productivity",
+    "tags": [
+      "documentation",
+      "readme",
+      "open-source"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "refactor-planner",
+    "name": "Refactor Planner",
+    "description": "Creates a safe, step-by-step plan to refactor messy code without breaking existing behavior.",
+    "category": "coding",
+    "tags": [
+      "refactoring",
+      "code-quality",
+      "planning"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "release-notes-generator",
+    "name": "Release Notes Generator",
+    "description": "Generates clear, user-friendly release notes from a git log or list of PRs.",
+    "category": "productivity",
+    "tags": [
+      "git",
+      "releases",
+      "documentation",
+      "changelog"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "responsive-layout-reviewer",
+    "name": "Responsive Layout Reviewer",
+    "description": "Reviews HTML/CSS or component code for responsive design issues across mobile, tablet, and desktop breakpoints.",
+    "category": "coding",
+    "tags": [
+      "responsive",
+      "css",
+      "mobile",
+      "layout",
+      "frontend"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "sdk-quickstart-writer",
+    "name": "SDK Quickstart Writer",
+    "description": "Generates a concise, copy-paste-ready quickstart guide for any SDK or library.",
+    "category": "writing",
+    "tags": [
+      "sdk",
+      "documentation",
+      "quickstart",
+      "onboarding"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "seo-content-optimizer",
+    "name": "SEO Content Optimizer",
+    "description": "Analyzes and rewrites content to maximize search engine visibility without sounding robotic.",
+    "category": "writing",
+    "tags": [
+      "seo",
+      "content",
+      "marketing"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "seo-metadata-generator",
+    "name": "SEO Metadata Generator",
+    "description": "Generates optimized title tags, meta descriptions, Open Graph tags, and structured data for any web page.",
+    "category": "writing",
+    "tags": [
+      "seo",
+      "metadata",
+      "open-graph",
+      "structured-data",
+      "html"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "social-post-thread-writer",
+    "name": "Social Post Thread Writer",
+    "description": "Converts a blog post, idea, or document into an engaging Twitter/X or LinkedIn thread with hooks and CTAs.",
+    "category": "writing",
+    "tags": [
+      "social-media",
+      "twitter",
+      "linkedin",
+      "content",
+      "writing"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "sprint-summary-generator",
+    "name": "Sprint Summary Generator",
+    "description": "Converts a list of completed tickets or commits into a clear sprint summary for stakeholders.",
+    "category": "productivity",
+    "tags": [
+      "agile",
+      "sprint",
+      "reporting",
+      "productivity"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "sql-query-optimizer",
+    "name": "SQL Query Optimizer",
+    "description": "Reviews SQL queries for performance issues and rewrites them with optimized execution plans.",
+    "category": "data",
+    "tags": [
+      "sql",
+      "database",
+      "performance",
+      "optimization"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "stack-trace-analyzer",
+    "name": "Stack Trace Analyzer",
+    "description": "Interprets error stack traces to pinpoint root cause, explain what went wrong, and suggest fixes.",
+    "category": "coding",
+    "tags": [
+      "debugging",
+      "errors",
+      "stack-trace"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "tech-blog-writer",
+    "name": "Technical Blog Post Writer",
+    "description": "Writes engaging, accurate technical blog posts targeted at developer audiences.",
+    "category": "writing",
+    "tags": [
+      "writing",
+      "blog",
+      "technical-writing",
+      "content"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "tech-debt-auditor",
+    "name": "Tech Debt Auditor",
+    "description": "Identifies and prioritizes technical debt in a codebase with an effort/impact matrix.",
+    "category": "coding",
+    "tags": [
+      "tech-debt",
+      "code-quality",
+      "refactoring",
+      "audit"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "troubleshooting-guide-builder",
+    "name": "Troubleshooting Guide Builder",
+    "description": "Builds a structured troubleshooting guide with symptom → cause → fix format for any tool or system.",
+    "category": "writing",
+    "tags": [
+      "troubleshooting",
+      "documentation",
+      "support",
+      "dx"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "unit-test-improver",
+    "name": "Unit Test Improver",
+    "description": "Reviews existing unit tests for gaps, weak assertions, and missing edge cases, then rewrites them to be more robust.",
+    "category": "coding",
+    "tags": [
+      "testing",
+      "unit-tests",
+      "code-quality",
+      "jest"
+    ],
+    "author": "simplyutils"
+  },
+  {
+    "slug": "unit-test-writer",
+    "name": "Unit Test Writer",
+    "description": "Generates comprehensive unit tests for any function or module with edge cases.",
+    "category": "coding",
+    "tags": [
+      "testing",
+      "unit-tests",
+      "jest",
+      "vitest"
+    ],
+    "author": "simplyutils"
+  }
+]
