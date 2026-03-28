@@ -3,8 +3,6 @@ name: Generate Contributors
 on:
   push:
     branches: [main]
-    paths:
-      - 'skills/**'
 
 jobs:
   contributors:
