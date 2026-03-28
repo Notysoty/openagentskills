@@ -24,6 +24,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SKILLS_DIR = path.join(__dirname, '..', 'skills');
 
 const VALID_CATEGORIES = ['coding', 'writing', 'data', 'devops', 'research', 'productivity'];
+const VALID_DIFFICULTIES = ['beginner', 'intermediate', 'advanced'];
 
 const MIN_DESCRIPTION_WORDS = 5;
 const MIN_TAGS = 2;
@@ -111,6 +112,15 @@ function validateFrontmatter(fm) {
     errors.push('`author` is required and must be a non-empty string');
   }
 
+  // difficulty (optional)
+  if (fm.difficulty !== undefined && fm.difficulty !== null) {
+    if (!VALID_DIFFICULTIES.includes(fm.difficulty)) {
+      errors.push(
+        `\`difficulty\` must be one of: ${VALID_DIFFICULTIES.join(', ')} (got "${fm.difficulty}")`
+      );
+    }
+  }
+
   return { errors, warnings };
 }
 
@@ -161,12 +171,15 @@ export function computeQualityScore(fm, body) {
   if (Array.isArray(fm.tags) && fm.tags.length >= MIN_TAGS && fm.tags.length <= MAX_TAGS) score += 8;
   if (fm.author && fm.author.trim()) score += 8;
 
-  // Content quality (60 pts)
-  if (/^##\s+Example/im.test(body)) score += 20;
+  // Content quality (55 pts)
+  if (/^##\s+Examples?/im.test(body)) score += 20;
   if (/^##\s+The Prompt/im.test(body)) score += 20;
   const wc = wordCount(body);
-  if (wc >= 300) score += 20;
-  else if (wc >= MIN_BODY_WORDS) score += 10;
+  if (wc >= 300) score += 15;
+  else if (wc >= MIN_BODY_WORDS) score += 8;
+
+  // Bonus: difficulty field set (5 pts)
+  if (fm.difficulty && VALID_DIFFICULTIES.includes(fm.difficulty)) score += 5;
 
   return score;
 }

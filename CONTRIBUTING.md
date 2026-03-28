@@ -56,6 +56,11 @@ Keep the folder name short and descriptive. Good examples: `git-commit-writer`, 
 
 Use the template in the next section. Take your time on this — the quality of your instructions directly determines how useful the skill is.
 
+**Tip:** The `templates/` folder has ready-to-fill starter files for common skill types:
+- `templates/code-review-skill.md` — for review and audit skills
+- `templates/writing-skill.md` — for content generation skills
+- `templates/analysis-skill.md` — for research and analysis skills
+
 ### 6. Test it locally
 
 Before opening a PR, test your skill with at least one agent environment. Make sure the agent actually produces useful output following your instructions.
@@ -97,6 +102,7 @@ Copy this template exactly. The YAML frontmatter (between the `---` lines) is re
 name: Your Skill Name
 description: One sentence describing what this skill does.
 category: coding
+difficulty: beginner
 tags:
   - your-tag
   - another-tag
@@ -155,7 +161,8 @@ When asked to [trigger condition], follow these steps:
 | `name` | Yes | Human-readable name. Title case. Max ~50 chars. |
 | `description` | Yes | One sentence. Should finish "This skill..." |
 | `category` | Yes | One of: `coding`, `writing`, `data`, `devops`, `research`, `productivity` |
-| `tags` | Yes | 2-5 lowercase hyphenated tags for discoverability |
+| `difficulty` | No | One of: `beginner`, `intermediate`, `advanced` — helps users pick the right skill |
+| `tags` | Yes | 2–7 lowercase hyphenated tags for discoverability |
 | `author` | Yes | Your GitHub username |
 
 ---

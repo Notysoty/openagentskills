@@ -20,10 +20,12 @@
   },
   "license": "MIT",
   "bin": {
-    "openagentskills": "./bin/cli.js"
+    "openagentskills": "./bin/cli.cjs"
   },
+  "type": "module",
   "scripts": {
-    "validate": "node scripts/validate-skills.js"
+    "validate": "node scripts/validate-skills.js",
+    "contributors": "node scripts/generate-contributors.js"
   },
   "engines": {
     "node": ">=16"

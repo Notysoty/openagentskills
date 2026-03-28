@@ -10,6 +10,8 @@ const VALID_CATEGORIES = ["coding", "writing", "data", "devops", "research", "pr
 const MIN_TAGS = 2;
 const MAX_TAGS = 7;
 
+const VALID_DIFFICULTIES = ["beginner", "intermediate", "advanced"];
+
 function computeQualityScore(fm, body) {
   let score = 0;
   if (fm.name && fm.name.trim()) score += 8;
@@ -20,14 +22,15 @@ function computeQualityScore(fm, body) {
   if (/^##\s+Examples?/im.test(body)) score += 20;
   if (/^##\s+The Prompt/im.test(body)) score += 20;
   const wc = body.trim().split(/\s+/).filter(Boolean).length;
-  if (wc >= 300) score += 20;
-  else if (wc >= 100) score += 10;
+  if (wc >= 300) score += 15;
+  else if (wc >= 100) score += 8;
+  if (fm.difficulty && VALID_DIFFICULTIES.includes(fm.difficulty)) score += 5;
   return score;
 }
 
 function scoreLabel(score) {
-  if (score === 100) return `${C.green}${score}/100 ★ Excellent${C.reset}`;
-  if (score >= 80)  return `${C.yellow}${score}/100 Good${C.reset}`;
+  if (score >= 95) return `${C.green}${score}/100 ★ Excellent${C.reset}`;
+  if (score >= 75) return `${C.yellow}${score}/100 Good${C.reset}`;
   return `${C.magenta}${score}/100 Needs work${C.reset}`;
 }
 
@@ -86,6 +89,7 @@ function loadSkills() {
         category: fm.category || "uncategorized",
         tags: Array.isArray(fm.tags) ? fm.tags : [],
         author: fm.author || "",
+        difficulty: fm.difficulty || "",
         content,
         fm,
       };
@@ -119,7 +123,8 @@ function cmdList(args) {
   for (const [cat, items] of Object.entries(byCategory).sort()) {
     console.log(bold(cyan(`● ${cat.toUpperCase()}`)));
     for (const s of items.sort((a, b) => a.slug.localeCompare(b.slug))) {
-      console.log(`  ${green(s.slug.padEnd(40))} ${dim(s.description)}`);
+      const diff = s.difficulty ? ` ${dim("[" + s.difficulty + "]")}` : "";
+      console.log(`  ${green(s.slug.padEnd(40))}${diff} ${dim(s.description)}`);
     }
     console.log("");
   }
@@ -183,8 +188,9 @@ function cmdInfo(args) {
   console.log(`${dim("Slug:")}     ${skill.slug}`);
   console.log(`${dim("Category:")} ${yellow(skill.category)}`);
   console.log(`${dim("Tags:")}     ${skill.tags.join(", ") || "—"}`);
-  console.log(`${dim("Author:")}   ${skill.author || "—"}`);
-  console.log(`${dim("Quality:")}  ${scoreLabel(score)}`);
+  console.log(`${dim("Author:")}     ${skill.author || "—"}`);
+  console.log(`${dim("Difficulty:")} ${skill.difficulty || dim("not set")}`);
+  console.log(`${dim("Quality:")}    ${scoreLabel(score)}`);
   console.log("");
   console.log(body);
 }

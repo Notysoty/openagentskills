@@ -1,0 +1,34 @@
+name: Generate Contributors
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+
+jobs:
+  contributors:
+    runs-on: ubuntu-latest
+    name: Regenerate CONTRIBUTORS.md
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate CONTRIBUTORS.md
+        run: node scripts/generate-contributors.js
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add CONTRIBUTORS.md
+          git diff --cached --quiet || git commit -m "chore: regenerate CONTRIBUTORS.md [skip ci]"
+          git push
