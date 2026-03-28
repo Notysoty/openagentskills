@@ -89,10 +89,36 @@ Skills work across multiple agent environments: **Claude Code**, **Cursor**, **C
 
 ---
 
+## CLI — Search Skills from Your Terminal
+
+No need to open a browser. Use the CLI to find and explore skills right in your terminal.
+
+```bash
+# Search by keyword
+npx openagentskills search "api test"
+
+# List all skills, or filter by category
+npx openagentskills list
+npx openagentskills list --category coding
+
+# Show full details for a skill
+npx openagentskills info api-docs-generator
+```
+
+**Categories:** `coding` · `writing` · `productivity` · `devops` · `research` · `data`
+
+Install globally to skip `npx`:
+```bash
+npm install -g openagentskills
+openagentskills list
+```
+
+---
+
 ## How It Works
 
 **Step 1 — Find a skill**
-Browse the table above or search at [simplyutils.com/ai-resources](https://simplyutils.com/ai-resources).
+Browse the table above, run `npx openagentskills search <query>`, or visit [simplyutils.com/ai-resources](https://simplyutils.com/ai-resources).
 
 **Step 2 — Drop it into your project**
 Copy the skill folder into your agent's skills directory:

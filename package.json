@@ -1,0 +1,21 @@
+{
+  "name": "openagentskills",
+  "version": "1.0.0",
+  "description": "60+ ready-to-use AI agent skills for Claude Code, Cursor, Codex, Cline, and more.",
+  "keywords": ["ai", "agent", "skills", "claude", "cursor", "codex", "cline", "llm", "prompts"],
+  "homepage": "https://simplyutils.com/ai-resources",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Notysoty/openagentskills.git"
+  },
+  "license": "MIT",
+  "bin": {
+    "openagentskills": "./bin/cli.js"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-skills.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
