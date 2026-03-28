@@ -1,9 +1,15 @@
 name: Validate Skills
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'scripts/validate-skills.js'
   pull_request:
     paths:
       - 'skills/**'
+      - 'scripts/validate-skills.js'
 
 jobs:
   validate:
@@ -22,3 +28,20 @@ jobs:
 
       - name: Validate skill files
         run: node scripts/validate-skills.js
+
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint Markdown
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Lint skills
+        run: markdownlint "skills/**/*.md" --config .markdownlint.json

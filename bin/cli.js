@@ -6,6 +6,31 @@ const path = require("path");
 
 const SKILLS_DIR = path.join(__dirname, "..", "skills");
 
+const VALID_CATEGORIES = ["coding", "writing", "data", "devops", "research", "productivity"];
+const MIN_TAGS = 2;
+const MAX_TAGS = 7;
+
+function computeQualityScore(fm, body) {
+  let score = 0;
+  if (fm.name && fm.name.trim()) score += 8;
+  if (fm.description && fm.description.trim().split(/\s+/).length >= 5) score += 8;
+  if (fm.category && VALID_CATEGORIES.includes(fm.category)) score += 8;
+  if (Array.isArray(fm.tags) && fm.tags.length >= MIN_TAGS && fm.tags.length <= MAX_TAGS) score += 8;
+  if (fm.author && fm.author.trim()) score += 8;
+  if (/^##\s+Examples?/im.test(body)) score += 20;
+  if (/^##\s+The Prompt/im.test(body)) score += 20;
+  const wc = body.trim().split(/\s+/).filter(Boolean).length;
+  if (wc >= 300) score += 20;
+  else if (wc >= 100) score += 10;
+  return score;
+}
+
+function scoreLabel(score) {
+  if (score === 100) return `${C.green}${score}/100 ★ Excellent${C.reset}`;
+  if (score >= 80)  return `${C.yellow}${score}/100 Good${C.reset}`;
+  return `${C.magenta}${score}/100 Needs work${C.reset}`;
+}
+
 // ── ANSI colours ────────────────────────────────────────────────────────────
 const C = {
   reset: "\x1b[0m",
@@ -62,6 +87,7 @@ function loadSkills() {
         tags: Array.isArray(fm.tags) ? fm.tags : [],
         author: fm.author || "",
         content,
+        fm,
       };
     })
     .filter(Boolean);
@@ -149,7 +175,8 @@ function cmdInfo(args) {
   }
 
   // Strip frontmatter and print the markdown body
-  const body = skill.content.replace(/^---\n[\s\S]*?\n---\n/, "").trim();
+  const body = skill.content.replace(/^---[\s\S]*?---\n/, "").trim();
+  const score = computeQualityScore(skill.fm, body);
 
   console.log("");
   console.log(bold(cyan(`● ${skill.name}`)));
@@ -157,6 +184,7 @@ function cmdInfo(args) {
   console.log(`${dim("Category:")} ${yellow(skill.category)}`);
   console.log(`${dim("Tags:")}     ${skill.tags.join(", ") || "—"}`);
   console.log(`${dim("Author:")}   ${skill.author || "—"}`);
+  console.log(`${dim("Quality:")}  ${scoreLabel(score)}`);
   console.log("");
   console.log(body);
 }

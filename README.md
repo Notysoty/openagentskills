@@ -129,6 +129,27 @@ openagentskills list
 
 ---
 
+## Quick Start
+
+Get up and running in under 2 minutes:
+
+```bash
+# 1. Find a skill you need
+npx openagentskills search "unit test"
+
+# 2. Copy the skill into your project
+mkdir -p .agents/skills/unit-test-writer
+curl -o .agents/skills/unit-test-writer/SKILL.md \
+  https://raw.githubusercontent.com/Notysoty/openagentskills/main/skills/unit-test-writer/SKILL.md
+
+# 3. Tell your agent to use it
+# "Write unit tests for src/auth.ts using the Unit Test Writer skill."
+```
+
+For Cursor: paste the `## The Prompt / Instructions` section into your `.cursorrules` file.
+
+---
+
 ## How It Works
 
 **Step 1 — Find a skill**
